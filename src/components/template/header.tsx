@@ -7,7 +7,7 @@ import { BsWhatsapp, BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
 
 export default function Header() {
   return (
-    <div className="container mx-auto px-20">
+    <div className="container mx-auto lg:px-20">
       <div className="inline-flex items-center p-2">
         <a href="#" className="mr-2">
           <BsYoutube size={16} />

@@ -10,9 +10,18 @@ export default function Footer() {
             <div className="bg-primary text-white pt-20 pb-10">
                 <div className="container flex flex-wrap md:justify-center justify-start p-4 gap-4">
                     <div className="w-[48rem] ">
-                        <h3 className="text-white mb-4 font-bold text-3xl">
-                            FAKULTAS .... UNIVERSITAS SAWERIGADING
-                        </h3>
+                        <div className="inline-flex items-center text-primary-color">
+                            <Image
+                                src="/logo.png"
+                                className="w-auto h-auto"
+                                alt=""
+                                width={90}
+                                height={90}
+                            />
+                            <h1 className="text-white font-bold cursor-pointer xl:text-lg text-base ml-4">
+                                FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN<br />UNIVERSITAS SAWERIGADING
+                            </h1>
+                        </div>
                         <div className="d-flex flex-column justify-content-start text-justify">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dolor culpa, maxime maiores ratione voluptatibus mollitia est ab expedita perferendis.
@@ -20,7 +29,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="w-[18rem] ">
-                        <h3 className="text-white mb-4 text-3xl font-bold">
+                        <h3 className="text-white mb-4 text-2xl font-bold">
                             Informasi Kontak
                         </h3>
                         <p className="flex items-center gap-2">
@@ -37,7 +46,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="w-[10rem]">
-                        <h3 className="text-white mb-4 text-3xl font-bold">Follow Us</h3>
+                        <h3 className="text-white mb-4 text-2xl font-bold">Follow Us</h3>
                         <div className="flex gap-6 text-white items-center">
                             <Link
                                 href="#"

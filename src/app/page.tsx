@@ -21,20 +21,21 @@ export default function Home() {
         <Slideshow images={images} interval={5000} /> {/* Set interval to 5 seconds */}
       </div>
 
-      <div className="flex justify-center my-10">
-        <div className="flex h-[70vh] w-[140vh] bg-gray-300 p-8 m-4 rounded-lg shadow-md items-center justify-center">
+      <div className="flex flex-col md:flex-row items-center justify-center my-10">
+        <div className="flex w-screen h-[70vh] md:w-[140vh] bg-gray-300 p-8 m-4 rounded-lg shadow-md items-center justify-center">
           <p className="font-bold text-lg">BROSUR FAKULTAS</p>
         </div>
-        <div className="flex w-[50vh] bg-gray-300 p-8 m-4 rounded-lg shadow-md items-center justify-center">
+        <div className="flex w-screen h-[70vh] md:w-[50vh] bg-gray-300 p-8 m-4 rounded-lg shadow-md items-center justify-center">
           <p className="font-bold text-lg">BROSUR FAKULTAS</p>
         </div>
       </div>
 
+
       <div className="mx-12 lg:mx-48 flex justify-center my-16">
         <div className="font-bold text-2xl lg:text-5xl">MENGAPA MEMILIH FAKULTAS INI?</div>
       </div>
-      <div className="mx-12 lg:mx-48 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div className="mx-4 md:mx-12 lg:mx-48 flex justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-white shadow-md p-4 text-center">
             <Image src="/image_1.jpg" alt="Image 1" className="mx-auto" width={500} height={500} />
             <h2 className="text-xl font-semibold my-3">Alasan 1</h2>
@@ -61,9 +62,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-12 lg:mx-48 flex justify-center items-center h-screen">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div className="rounded-md text-center px-6 py-8 w-48 shadow-md">
+      <div className="mx-4 md:mx-12 lg:mx-48 flex justify-center items-center my-40">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="rounded-md text-center px-6 py-8 mx-auto w-64 md:w-48 shadow-md">
             <div className="flex flex-col items-center justify-center gap-4">
               <RxPerson size="5rem" />
               <p className="font-bold">0</p>
@@ -71,7 +72,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-md text-center px-6 py-8 w-48 shadow-md">
+          <div className="rounded-md text-center px-6 py-8 mx-auto w-64 md:w-48 shadow-md">
             <div className="flex flex-col items-center justify-center gap-4">
               <PiStudentBold size="5rem" />
               <p className="font-bold">0</p>
@@ -79,7 +80,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-md text-center px-6 py-8 w-48 shadow-md">
+          <div className="rounded-md text-center px-6 py-8 mx-auto w-64 md:w-48 shadow-md">
             <div className="flex flex-col items-center justify-center gap-4">
               <RiPresentationFill size="5rem" />
               <p className="font-bold">0</p>
@@ -87,7 +88,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-md text-center px-6 py-8 w-48 shadow-md">
+          <div className="rounded-md text-center px-6 py-8 mx-auto w-64 md:w-48 shadow-md">
             <div className="flex flex-col items-center justify-center gap-4">
               <PiUserListBold size="5rem" />
               <p className="font-bold">0</p>
@@ -97,42 +98,65 @@ export default function Home() {
         </div>
       </div>
 
+
       <div className="mx-12 lg:mx-48 flex justify-center my-16">
         <div className="font-bold text-2xl lg:text-5xl">GALERI FAKULTAS</div>
       </div>
-      <div className="grid grid-cols-6 col-span-2 gap-2 px-20">
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-          <Image className="h-full w-full object-cover "
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 px-4 md:px-10 xl:px-20">
+        <div className="overflow-hidden rounded-xl max-h-[14rem]">
+          <Image
+            className="h-full w-full object-cover"
             src="/image_1.jpg"
-            alt="" width={50} height={50} />
+            alt=""
+            width={50}
+            height={50}
+          />
         </div>
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-          <Image className="h-full w-full object-cover  "
+        <div className="overflow-hidden rounded-xl max-h-[14rem]">
+          <Image
+            className="h-full w-full object-cover"
             src="/image_2.jpg"
-            alt="" width={50} height={50} />
+            alt=""
+            width={50}
+            height={50}
+          />
         </div>
-        <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-          <Image className="h-full w-full object-cover "
+        <div className="overflow-hidden rounded-xl max-h-[10rem]">
+          <Image
+            className="h-full w-full object-cover"
             src="/image_3.jpg"
-            alt="" width={50} height={50} />
+            alt=""
+            width={50}
+            height={50}
+          />
         </div>
-        <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-          <Image className="h-full w-full object-cover "
+        <div className="overflow-hidden rounded-xl max-h-[10rem]">
+          <Image
+            className="h-full w-full object-cover"
             src="/image_4.jpg"
-            alt="" width={50} height={50} />
+            alt=""
+            width={50}
+            height={50}
+          />
         </div>
-        <div className="relative overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-          <div
-            className="text-white text-xl absolute inset-0  bg-slate-900/80 flex justify-center items-center">
+        <div className="relative overflow-hidden rounded-xl max-h-[10rem]">
+          <div className="text-white text-xl absolute inset-0 bg-slate-900/80 flex justify-center items-center">
             + 23
           </div>
-          <Image className="h-full w-full object-cover "
+          <Image
+            className="h-full w-full object-cover"
             src="/image_1.jpg"
-            alt="" width={50} height={50} />
+            alt=""
+            width={50}
+            height={50}
+          />
         </div>
       </div>
 
-      <div className="mx-12 lg:mx-48 flex items-center justify-center font-bold text-5xl my-20">APA KATA MEREKA?</div>
+
+      <div className="mx-12 lg:mx-48 flex justify-center my-16">
+        <div className="font-bold text-2xl lg:text-5xl">APA KATA MEREKA?</div>
+      </div>
       <div className="flex justify-center my-10">
         <div className="flex h-[70vh] w-[95vh] bg-gray-300 p-8 m-4 rounded-lg shadow-md items-center justify-center">
           <p className="font-bold text-lg">CERITA TESTIMONI MAHASISWA</p>
@@ -145,8 +169,8 @@ export default function Home() {
       <div className="mx-12 lg:mx-48 flex justify-center my-16">
         <div className="font-bold text-2xl lg:text-5xl">BERITA TERBARU</div>
       </div>
-      <div className="container md:grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-10 px-20">
-        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto">
+      <div className="container md:grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-10 px-5 lg:px-20">
+        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto my-5 md:my-0">
           <Image
             src="/image_1.jpg"
             alt="Image"
@@ -172,7 +196,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto">
+        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto my-5 md:my-0">
           <Image
             src="/image_1.jpg"
             alt="Image"
@@ -198,7 +222,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto">
+        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto my-5 md:my-0">
           <Image
             src="/image_1.jpg"
             alt="Image"
@@ -224,7 +248,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto">
+        <div className="bg-white shadow-md rounded overflow-hidden max-w-sm mx-auto my-5 md:my-0">
           <Image
             src="/image_1.jpg"
             alt="Image"

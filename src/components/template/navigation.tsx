@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
                                 height={90}
                             />
                             <h1 className="text-white font-bold cursor-pointer xl:text-lg text-base ml-4">
-                                FAKULTAS<br />UNIVERSITAS SAWERIGADING
+                                FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN<br />UNIVERSITAS SAWERIGADING
                             </h1>
                         </div>
                     </a>
