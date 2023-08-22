@@ -102,56 +102,21 @@ export default function Home() {
       <div className="mx-12 lg:mx-48 flex justify-center my-16">
         <div className="font-bold text-2xl lg:text-5xl">GALERI FAKULTAS</div>
       </div>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 px-4 md:px-10 xl:px-20">
-        <div className="overflow-hidden rounded-xl max-h-[14rem]">
-          <Image
-            className="h-full w-full object-cover"
-            src="/image_1.jpg"
-            alt=""
-            width={50}
-            height={50}
-          />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
+        <div className="rounded shadow-md">
+          <Image width={50} height={50} src="/image_1.jpg" alt="Image 1" className="w-full h-auto rounded-md" />
         </div>
-        <div className="overflow-hidden rounded-xl max-h-[14rem]">
-          <Image
-            className="h-full w-full object-cover"
-            src="/image_2.jpg"
-            alt=""
-            width={50}
-            height={50}
-          />
+        <div className="rounded shadow-md">
+          <Image width={50} height={50} src="/image_2.jpg" alt="Image 2" className="w-full h-auto rounded-md" />
         </div>
-        <div className="overflow-hidden rounded-xl max-h-[10rem]">
-          <Image
-            className="h-full w-full object-cover"
-            src="/image_3.jpg"
-            alt=""
-            width={50}
-            height={50}
-          />
+        <div className="rounded shadow-md">
+          <Image width={50} height={50} src="/image_3.jpg" alt="Image 3" className="w-full h-auto rounded-md" />
         </div>
-        <div className="overflow-hidden rounded-xl max-h-[10rem]">
-          <Image
-            className="h-full w-full object-cover"
-            src="/image_4.jpg"
-            alt=""
-            width={50}
-            height={50}
-          />
-        </div>
-        <div className="relative overflow-hidden rounded-xl max-h-[10rem]">
-          <div className="text-white text-xl absolute inset-0 bg-slate-900/80 flex justify-center items-center">
-            + 23
-          </div>
-          <Image
-            className="h-full w-full object-cover"
-            src="/image_1.jpg"
-            alt=""
-            width={50}
-            height={50}
-          />
+        <div className="rounded shadow-md">
+          <Image width={50} height={50} src="/image_4.jpg" alt="Image 4" className="w-full h-auto rounded-md" />
         </div>
       </div>
+
 
 
       <div className="mx-12 lg:mx-48 flex justify-center my-16">
