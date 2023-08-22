@@ -239,6 +239,127 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="containerrounded-lg p-12 gap-12 flex items-center flex-col mb-24">
+        <div className="mx-12 lg:mx-48 flex justify-center my-16">
+          <div className="font-bold text-2xl lg:text-5xl">HUBUNGI KAMI</div>
+        </div>
+
+        <form
+          action=""
+          method="POST"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 px-[1%] md:gap-8"
+        >
+
+          <div className="w-full flex gap-0 md:gap-4 flex-col justify-center my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4">
+              <div className="grid w-auto">
+                <div className="mb-2">
+                  <label
+                    htmlFor="fname"
+                    className="pl-2 text-xl font-semibold"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Nama Depan
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="fname"
+                  placeholder="Nama Depan"
+                  className="px-3 py-2 border rounded-md w-full"
+                  required
+                />
+              </div>
+
+              <div className="grid w-auto">
+                <div className="mb-2">
+                  <label
+                    htmlFor="bname"
+                    className="pl-2 text-xl font-semibold"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Nama Belakang
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="bname"
+                  placeholder="Nama Belakang"
+                  className="px-3 py-2 border rounded-md w-full"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4">
+              <div className="grid w-auto">
+                <div className="mb-2">
+                  <label
+                    htmlFor="email"
+                    className="pl-2 text-xl font-semibold"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Email
+                  </label>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Alamat Email"
+                  className="px-3 py-2 border rounded-md w-full"
+                  required
+                />
+              </div>
+
+              <div className="grid w-auto">
+                <div className="mb-2">
+                  <label
+                    htmlFor="nomor"
+                    className="pl-2 text-xl font-semibold"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Nomor Telepon
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="nomor"
+                  placeholder="08**********"
+                  className="px-3 py-2 border rounded-md w-full"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="md:mt-0">
+            <div className="grid w-full gap-3">
+              <div className="mb-2">
+                <label
+                  htmlFor="message"
+                  className="pl-2 text-xl font-semibold"
+                  style={{ fontSize: "20px" }}
+                >
+                  Ulasan
+                </label>
+              </div>
+              <textarea
+                className="bg-white text-sm px-3 py-2 border rounded-md w-full"
+                placeholder="Tulis pesan anda"
+                id="message"
+                style={{ fontSize: "17px" }}
+                rows={10}
+                required
+              />
+              <button className="bg-green-400 border-2 border-green-400 text-white px-4 py-2 rounded hover:border-green-800 hover:bg-green-800 duration-150">
+                Kirim Pesan
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
     </main>
   )
 }
