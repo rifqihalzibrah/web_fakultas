@@ -5,9 +5,6 @@
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
-
-  --background--primary: rgb(12, 179, 29);
-  --background--secondary: rgb(255, 178, 0);
 }
 
 body {
@@ -25,4 +22,29 @@ body {
 
 .transform.translate-x-100 {
   transform: translateX(100%);
+}
+
+.section_top {
+  overflow: hidden;
+  background-image: url(/image_1.jpg  );
+  background-size: cover;
+  background-position: center;
+  animation: change 30s infinite ease-in-out;
+}
+
+@keyframes change {
+
+  0%,
+  100% {
+    background-image: url(/image_1.jpg);
+  }
+
+  33.33% {
+    background-image: url(/image_2.jpg);
+  }
+
+  66.67% {
+    background-image: url(/image_4.jpg);
+  }
+
 }

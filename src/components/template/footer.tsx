@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <>
-            <div className="bg-primary text-white pt-20 pb-10">
+            <div className="bg-purple-950 text-white pt-20 pb-10">
                 <div className="container flex flex-wrap md:justify-center justify-start p-4 gap-4">
                     <div className="w-[48rem] ">
                         <div className="inline-flex items-center text-primary-color">

@@ -1,24 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
-import Slideshow from "@/components/ui/slideShow";
 import { PiStudentBold, PiUserListBold } from "react-icons/pi";
 import { RxPerson } from "react-icons/rx";
 import { RiPresentationFill } from "react-icons/ri";
-
-const images = [
-  'image_1.jpg',
-  'image_2.jpg',
-  'image_3.jpg',
-  'image_4.jpg'
-  // Add more image URLs here
-];
+import { AiFillPlayCircle } from "react-icons/ai";
 
 export default function Home() {
   return (
     <main>
       {/* -- Carousel -- */}
-      <div className="flex justify-center items-center h-screen">
-        <Slideshow images={images} interval={5000} /> {/* Set interval to 5 seconds */}
+      <div className="w-full section_top lg:h-[50rem] h-[40rem] md:h-[45rem] bg-cover">
+        <div className="w-full md:pl-24 h-full bg-gray-950 bg-opacity-50 flex flex-col justify-center md:items-start items-center gap-4">
+          <h1 className="md:text-5xl text-4xl font-bold text-center flex md:justify-start justify-start text-white w-[50%] md:w-[40%] lg:w-full pb-4">
+            Selamat Datang di
+          </h1>
+          <h1 className="md:text-4xl text-xl font-bold text-center flex md:justify-start justify-start text-white w-[50%] md:w-[40%] lg:w-full pb-4">
+            Portal Website FKIP UNSA Makassar
+          </h1>
+          <h1 className="md:text-2xl text-lg font-bold text-center flex md:justify-start justify-start text-white w-[50%] md:w-[40%] lg:w-full pb-4">
+            Web informasi, Data, Edukasi dan Umpan balik FKIP Universitas Sawerigading Makassar
+          </h1>
+          <h1 className="flex gap-6 items-center md:flex-row flex-col justify-center">
+            <div className="bg-purple-900 border-white border-2 rounded-full p-1 text-white md:ml-6">
+              <AiFillPlayCircle size={40} />
+            </div>
+            <div className="text-white">Tonton Kami</div>
+          </h1>
+        </div>
+
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center my-10">
@@ -154,7 +163,7 @@ export default function Home() {
 
           <div className="p-4 bg-white flex justify-center">
             <Link href="#">
-              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-green-400 hover:bg-green-400 hover:text-white duration-150">
+              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-purple-400 hover:bg-purple-400 hover:text-white duration-150">
                 Selengkapnya
               </button>
             </Link>
@@ -180,7 +189,7 @@ export default function Home() {
 
           <div className="p-4 bg-white flex justify-center">
             <Link href="#">
-              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-green-400 hover:bg-green-400 hover:text-white duration-150">
+              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-purple-400 hover:bg-purple-400 hover:text-white duration-150">
                 Selengkapnya
               </button>
             </Link>
@@ -206,7 +215,7 @@ export default function Home() {
 
           <div className="p-4 bg-white flex justify-center">
             <Link href="#">
-              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-green-400 hover:bg-green-400 hover:text-white duration-150">
+              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-purple-400 hover:bg-purple-400 hover:text-white duration-150">
                 Selengkapnya
               </button>
             </Link>
@@ -232,7 +241,7 @@ export default function Home() {
 
           <div className="p-4 bg-white flex justify-center">
             <Link href="#">
-              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-green-400 hover:bg-green-400 hover:text-white duration-150">
+              <button className="bg-white border-2 text-gray-600 px-4 py-2 rounded hover:border-purple-400 hover:bg-purple-400 hover:text-white duration-150">
                 Selengkapnya
               </button>
             </Link>
@@ -352,7 +361,7 @@ export default function Home() {
                 rows={10}
                 required
               />
-              <button className="bg-green-400 border-2 border-green-400 text-white px-4 py-2 rounded hover:border-green-800 hover:bg-green-800 duration-150">
+              <button className="bg-purple-400 border-2 border-purple-400 text-white px-4 py-2 rounded hover:border-purple-800 hover:bg-purple-800 duration-150">
                 Kirim Pesan
               </button>
             </div>
